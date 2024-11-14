@@ -322,7 +322,7 @@ def train(train_loader, model, criterion, optimizer, epoch, device, args):
         if i == 0:
             ncu.start()  # Start profiling at the beginning of training
 
-        if i >= 10:  # Stop profiling after 10 iterations
+        if i >= 1:  # Stop profiling after 1 iterations
             ncu.stop()
             break
         
