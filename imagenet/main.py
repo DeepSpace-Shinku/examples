@@ -5,6 +5,8 @@ import shutil
 import time
 import warnings
 from enum import Enum
+import torch.cuda.profiler as ncu
+
 
 import torch
 import torch.backends.cudnn as cudnn
