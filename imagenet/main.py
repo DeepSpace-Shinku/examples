@@ -324,7 +324,7 @@ def train(train_loader, model, criterion, optimizer, epoch, device, args):
 
         if i >= 1:  # Stop profiling after 1 iterations
             ncu.stop()
-            break
+            exit()
         
         # measure data loading time
         data_time.update(time.time() - end)
