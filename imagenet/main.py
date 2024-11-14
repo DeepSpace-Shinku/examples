@@ -321,9 +321,11 @@ def train(train_loader, model, criterion, optimizer, epoch, device, args):
     for i, (images, target) in enumerate(train_loader):
         if i == 0:
             ncu.start()  # Start profiling at the beginning of training
+            print("ncu start")
 
         if i >= 1:  # Stop profiling after 1 iterations
             ncu.stop()
+            print("ncu stop")       
             exit()
         
         # measure data loading time
